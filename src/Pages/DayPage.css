@@ -177,6 +177,10 @@ html,
     -ms-overflow-style: none;
   }
 
+  .content {
+    width: 260px
+  }
+
   .title {
     font-size: 3rem;
     padding-top: 2rem;
