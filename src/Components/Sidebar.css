@@ -1,0 +1,28 @@
+.sidebar {
+  width: 60px;
+  height: 100vh;
+  z-index: 2;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.day {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.3s;
+  height: 14vh;
+  color: white;
+  text-decoration: none;
+}
+
+.day:hover {
+  color: #1c6c4c;
+}

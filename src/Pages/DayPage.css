@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body,
+html,
+#root {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+.app {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  background-color: black;
+  background-image: url("https://www.ssms-pilani.in/_next/static/media/Pattern.92d037b2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.center-fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: radial-gradient(
+    circle at center 60%,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.8) 25%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.2) 75%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  z-index: 1;
+  pointer-events: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1f7152;
+  opacity: 0.2;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.sidebar {
+  width: 60px;
+  height: 100vh;
+  z-index: 2;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.day {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.3s;
+  height: 14vh;
+  color: white;
+}
+
+.day:hover {
+  color: #1c6c4c;
+}
+
+.main {
+  flex: 1;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  margin-right: 60px;
+}
+
+.title {
+  color: white;
+  font-family: "Lilita One", sans-serif;
+  font-size: 6rem;
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+  border: 0 solid #e5e7eb;
+  letter-spacing: 3px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  max-width: 1200px;
+  justify-items: center;
+}
+
+.meal-card {
+  background-color: #111;
+  color: #2dd293;
+  border: 4px solid #1f7152;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  width: 400px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 800;
+  box-shadow: 0 0 10px rgba(31, 113, 82, 0.3);
+}
+
+.meal-time {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: white;
+}
