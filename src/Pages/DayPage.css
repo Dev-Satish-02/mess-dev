@@ -155,6 +155,13 @@ html,
   color: white;
 }
 
+.meal-item {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: white;
+}
+
 @media (max-width: 768px) {
   .app {
     flex-direction: column;
@@ -170,7 +177,7 @@ html,
     margin-right: 0;
     width: 100%;
     flex: none;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     overflow-y: auto;
     max-height: 84vh;
     scrollbar-width: none;
@@ -178,29 +185,35 @@ html,
   }
 
   .content {
-    width: 260px
+    width: 260px;
   }
 
   .title {
-    font-size: 3rem;
+    font-size: 3.6rem;
     padding-top: 2rem;
   }
 
   .card-container {
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .meal-card {
     width: 90vw;
-    max-width: 280px;
+    max-width: 250px;
     padding: 1.5rem;
     font-size: 1.5rem;
   }
 
   .meal-time {
     font-size: 1rem;
+    line-height: 1.6rem
+  }
+
+  .meal-item {
+    font-size: 1rem;
+    line-height: 0.8rem
   }
 
   .home-icon {
@@ -210,4 +223,23 @@ html,
     height: 2.5rem;
     font-size: 1rem;
   }
+}
+
+.footer-note {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.heart {
+  color: #e25555;
+}
+
+.dev-link {
+  color:rgb(226, 226, 226);
+  text-decoration: none;
+  font-weight: 700;
 }

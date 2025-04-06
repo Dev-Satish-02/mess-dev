@@ -70,11 +70,14 @@ export default function DayPage() {
                                 </p>
                             </div>
                         </div>
+                        <p className="footer-note">
+                            made with <span className="heart">❤️</span> by <a href="https://in.linkedin.com/in/dev-satish" target="_blank" rel="noopener noreferrer" className="dev-link">dev</a>
+                        </p>
                     </div>
                 ) : matchedMenu ? (
                     <div className="content">
                         <Link to="/" className="home-icon">
-                        <FontAwesomeIcon icon={faHouse} />
+                            <FontAwesomeIcon icon={faHouse} />
                         </Link>
                         <h1 className="title">{day.toUpperCase()}</h1>
                         <div className="card-container">
@@ -82,7 +85,7 @@ export default function DayPage() {
                                 <div className="meal-card" key={meal}>
                                     <div>{meal.charAt(0).toUpperCase() + meal.slice(1)}</div>
                                     {matchedMenu.menu[meal].map((item, i) => (
-                                        <p className="meal-time" key={i}>{item}</p>
+                                        <p className="meal-item" key={i}>{item}</p>
                                     ))}
                                 </div>
                             ))}
