@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import fullMenu from "../Data/MenuByDate.json";
 import './DayPage.css'
 import Sidebar from "../Components/Sidebar";
+import Downbar from "../Components/Downbar";
 
 function getNextMenuForDay(day) {
     const today = new Date();
@@ -93,6 +94,7 @@ export default function DayPage() {
                     </div>
                 )}
             </div>
+            <Downbar />
         </div>
     );
 }

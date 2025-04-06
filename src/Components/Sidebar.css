@@ -26,3 +26,9 @@
 .day:hover {
   color: #1c6c4c;
 }
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}

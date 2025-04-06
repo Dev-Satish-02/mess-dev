@@ -135,7 +135,7 @@ html,
 }
 
 .meal-card {
-  background-color: #111;
+  background-color: black;
   color: #2dd293;
   border: 4px solid #1f7152;
   border-radius: 0.75rem;
@@ -153,4 +153,57 @@ html,
   font-size: 1.25rem;
   font-weight: 500;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .day {
+    font-size: 16px;
+    height: auto;
+    padding: 0.5rem;
+  }
+
+  .main {
+    margin-right: 0;
+    width: 100%;
+    flex: none;
+    padding-bottom: 4rem;
+    overflow-y: auto;
+    max-height: 84vh;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .title {
+    font-size: 3rem;
+    padding-top: 2rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .meal-card {
+    width: 90vw;
+    max-width: 280px;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .meal-time {
+    font-size: 1rem;
+  }
+
+  .home-icon {
+    top: 1rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
 }

@@ -1,0 +1,30 @@
+.downbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #111;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+}
+
+.downbar .day {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.downbar .day:hover {
+  color: #1c6c4c;
+}
+
+
+@media (min-width: 769px) {
+  .downbar {
+    display: none;
+  }
+}
