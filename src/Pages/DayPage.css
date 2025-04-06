@@ -162,6 +162,16 @@ html,
   color: white;
 }
 
+.footer-note {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  margin-top: 16rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  opacity: 0.8;
+}
+
 @media (max-width: 768px) {
   .app {
     flex-direction: column;
@@ -177,7 +187,7 @@ html,
     margin-right: 0;
     width: 100%;
     flex: none;
-    padding-bottom: 2rem;
+    padding-bottom: 88px;
     overflow-y: auto;
     max-height: 84vh;
     scrollbar-width: none;
@@ -223,15 +233,10 @@ html,
     height: 2.5rem;
     font-size: 1rem;
   }
-}
 
-.footer-note {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  margin-top: 2rem;
-  text-align: center;
-  opacity: 0.8;
+  .footer-note {
+    margin-top: 2rem;
+  }
 }
 
 .heart {
