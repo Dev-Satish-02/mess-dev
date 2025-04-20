@@ -2,13 +2,14 @@ import React from "react";
 import { Analytics } from '@vercel/analytics/react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import DayPage from "./Pages/DayPage";
+import Today from "./Components/Today";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<DayPage />} />
+          <Route path="/" element={<Today />} />
           <Route path="/:day" element={<DayPage />} />
         </Routes>
       </BrowserRouter>
