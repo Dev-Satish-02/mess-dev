@@ -22,13 +22,7 @@
       "BUTTER SCOTCH  I/C",
       "WEDNESDAY"
     ],
-    "dinner": [
-      "KADHAI VEG",
-      "DAL PANCHRATAN",
-      "CHAPATI",
-      "PLAIN RICE",
-      "RASAM"
-    ]
+    "dinner": ["KADHAI VEG", "DAL PANCHRATAN", "CHAPATI", "PLAIN RICE", "RASAM"]
   },
   "2025-04-17": {
     "day": "thursday",
@@ -341,10 +335,7 @@
       "SAMBAR",
       "SHIKANJI"
     ],
-    "dinner": [
-      "PSENTI GRUB",
-      "SOUTH PARK"
-    ]
+    "dinner": ["PSENTI GRUB", "SOUTH PARK"]
   },
   "2025-04-27": {
     "day": "sunday",
@@ -384,15 +375,16 @@
       "CHOICE OF EGG",
       "CORNFLAKES",
       "BREAD +JAM",
-      "VEG UPMA",
-      "ADRAK CHUTNEY",
+      "BREAD ROLL",
+      "GREEN  CHUTNEY",
+      "SWEET DALIYA",
       "BANANA",
       "TEA+ COFFEE",
       "Milk"
     ],
     "lunch": [
       "GREEN SALAD",
-      "CABBAGE FOUGHAT",
+      "RAW BANANA MASALA",
       "RAJMA MASALA",
       "DAL LASOONI",
       "CHAPATI",
@@ -402,7 +394,7 @@
     ],
     "dinner": [
       "GREEN SALAD",
-      "ALOO BHINDI",
+      "CRISPY BHINDI MASALA",
       "BUTTER DAL",
       "CHAPATI",
       "PLAIN RICE",
@@ -425,13 +417,13 @@
     ],
     "lunch": [
       "CORN SALAD",
-      "SOYA MASALA DRY",
-      "VEG JALFREZI",
+      "SOYA TAWA MASALA",
+      "KAKADI KI SABJI",
       "DHABA DAL",
       "CHAPATI",
       "PLAIN RICE",
       "SAMBAR",
-      "ORANGE SHARBET"
+      "AAM PANNA"
     ],
     "dinner": [
       "LEMON+ ONION",
@@ -457,15 +449,15 @@
     ],
     "lunch": [
       "ONION SALAD",
-      "PANEER LABBADAR",
+      "PALAK PANEER",
       "DAL MAKHANI",
-      "VEG PULAO",
       "PLAIN PARATHA",
+      "VEG PULAO",
       "CUCUMBER RAITA",
-      "BUTTER SCOTCH  I/C",
-      "WEDNESDAY"
+      "MANGO   I/C"
     ],
     "dinner": [
+      "PEANUT SALAD",
       "KADHAI VEG",
       "DAL PANCHRATAN",
       "CHAPATI",
