@@ -30,7 +30,6 @@ function getNextMenuForDay(day) {
 export default function DayPage() {
 
     const { day } = useParams();
-    const isHome = !day;
     const matchedMenu = day ? getNextMenuForDay(day) : null;
 
     return (
@@ -38,45 +37,10 @@ export default function DayPage() {
             <div className="center-fade"></div>
             <div className="overlay"></div>
             <Sidebar />
-
             <div className="main">
-                {isHome ? (
+                {matchedMenu ? (
                     <div className="content">
-                        <h1 className="title">MESS TIMINGS</h1>
-                        <div className="card-container">
-                            <div className="meal-card">
-                                <div>Breakfast</div>
-                                <p className="meal-time">
-                                    07:30 AM - 09:30 AM<br />
-                                    08:00 AM - 10:00 AM<br />
-                                    (Sundays and Holidays)
-                                </p>
-                            </div>
-
-                            <div className="meal-card">
-                                <div>Lunch</div>
-                                <p className="meal-time">
-                                    11:30 AM - 01:30 PM<br />
-                                    12:00 PM - 02:00 PM<br />
-                                    (Sundays and Holidays)
-                                </p>
-                            </div>
-
-                            <div className="meal-card">
-                                <div>Dinner</div>
-                                <p className="meal-time">
-                                    07:00 PM - 09:00 PM<br />
-                                    (08:45PM Last Entry Time)
-                                </p>
-                            </div>
-                        </div>
-                        <p className="footer-note">
-                            made with <span className="heart">❤️</span> by <a href="https://in.linkedin.com/in/dev-satish" target="_blank" rel="noopener noreferrer" className="dev-link">dev</a>
-                        </p>
-                    </div>
-                ) : matchedMenu ? (
-                    <div className="content">
-                        <Link to="/" className="home-icon">
+                        <Link to="/timings" className="home-icon">
                             <FontAwesomeIcon icon={faHouse} />
                         </Link>
                         <h1 className="title">{day.toUpperCase()}</h1>
