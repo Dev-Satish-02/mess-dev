@@ -14,7 +14,7 @@ export default function DayPage() {
     const [matchedMenu, setMatchedMenu] = useState(null);
 
     useEffect(() => {
-    const menu_url = process.env.REACT_APP_MENU_URL;
+    const menu_url = process.env.REACT_APP_MENU_URL || "https://raw.githubusercontent.com/sasanktumpati/menuapp/refs/heads/main/data/menu/menudata.json";
     fetch(menu_url)
         .then(res => res.json())
         .then(data => {
