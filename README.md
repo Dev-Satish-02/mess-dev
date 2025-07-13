@@ -1,1 +1,1 @@
-SSMS couldn't maintain one site, so I made it myself.
+The old school mess menu.

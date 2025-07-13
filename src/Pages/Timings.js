@@ -1,15 +1,16 @@
 import Sidebar from "../Components/Sidebar";
 import Downbar from "../Components/Downbar";
 import "./DayPage.css";
+import { useMediaQuery } from '@mui/material';
 
 export default function Timings() {
+  const isMobile = useMediaQuery('(max-width:768px)');
   return (
     <div className="app">
       <div className="center-fade"></div>
       <div className="overlay"></div>
-      <Sidebar />
-      <Downbar />
-      
+      {!isMobile && <Sidebar />}
+      {isMobile && <Downbar />}
       <div className="main">
         <div className="content">
           <h1 className="title">MESS TIMINGS</h1>
